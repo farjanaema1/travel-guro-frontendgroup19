@@ -12,14 +12,15 @@ const places = () => {
   
                 
 <section className='mt-16 mb-16 mx-auto w-4/5 '>
-<div  className="divider heading text-2xl font-bold text-error">Find</div>
+<div  className="divider heading text-2xl font-bold text-error">Find Destination</div>
 <h1 className='font-bold text-3xl font-link'>Most Popular Places</h1>
 
 <div className="divider"></div> 
 <h1 style={{
     color:'gray',
     width:500
-}} className='para-link text-3xl mt-8 mb-8 font-bold mx-auto'>Every day we help the world’s leading brands create their most vehicles</h1>
+}} className='para-link text-3xl mt-8 mb-8 font-bold mx-auto'> We believe that travel should be more than business,
+ it should be a way of life.</h1>
 <div className='flex ml-8'>
     <img src={logo1} alt="" />
     <img src={logo2} alt="" />

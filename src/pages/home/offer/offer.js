@@ -2,16 +2,16 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import  './offer.css';
 import { faBullseye, faReply, faTag } 
 from '@fortawesome/free-solid-svg-icons';
-import car1 from '../../../assets/1.png';
-import car2 from '../../../assets/2.png';
-import car3 from '../../../assets/3.png';
-import car4 from '../../../assets/4.png';
+import offer1 from '../../../assets/offer1.png';
+import offer2 from '../../../assets/offer2.png';
+import offer3 from '../../../assets/offer3.png';
+import offer4 from '../../../assets/offer4.png';
 
 const Offer = () => {
     return (
         <section>
             <div>
-                <h1 className="text-2xl font-bold font-link">Featured Rental Vehicles</h1>
+                <h1 className="text-2xl font-bold font-link">Featured Dream Places</h1>
                 <p style={{
                     width:500,
                     color:'gray'
@@ -19,7 +19,7 @@ const Offer = () => {
             </div>
             <div className='grid grid-cols-4 mt-8'>
                 <div style={{
-                     background : `url( ${car1})`,
+                     background : `url( ${offer1})`,
                      height:500
 
                 }} className='p-20 photo'> 
@@ -31,7 +31,7 @@ const Offer = () => {
                 }} className='mx-auto p-3 font-bold font-link'>
                     <h1>20% Off</h1>
                 </div>
-                    <h1 className='text-2xl font-bold font-link text-white mt-32 offer'>Awsome Class Model</h1>
+                    <h1 className='text-2xl font-bold font-link text-white mt-32 offer'>Plitvice Lakes</h1>
                     <h1 className='text-xl text-white mt-4'><span className='text-error font-bold '>$776</span>/Mo</h1>
                   
                         <div className='flex text-white'>
@@ -42,7 +42,7 @@ const Offer = () => {
                     </div>
                 </div>
                 <div style={{
-                     background : `url( ${car2})`
+                     background : `url( ${offer2})`
 
                 }} className='p-20 photo'> 
                  <div style={{
@@ -54,8 +54,8 @@ const Offer = () => {
                     <h1>20% Off</h1>
                 </div>
                
-                     <h1 className='text-2xl font-bold font-link text-white mt-32 offer'>Awsome Class Model</h1>
-                     <h1 className='text-warning font-bold font-link '>Limited</h1>
+                     <h1 className='text-2xl font-bold font-link text-white mt-32 offer'>Queenstown</h1>
+                     <h1 className='text-white font-bold font-link '>Limited</h1>
                     <h1 className='text-xl text-white mt-4'><span className='text-error font-bold '>$776</span>/Mo</h1>
                   
                         <div className='flex text-white'>
@@ -66,10 +66,10 @@ const Offer = () => {
                     </div>
                 </div>
                 <div style={{
-                     background : `url( ${car3})`
+                     background : `url( ${offer3})`
 
                 }} className='p-20 photo'> 
-                    <h1 className='text-2xl font-bold font-link text-white mt-32 offer'>Awsome Class Model</h1>
+                    <h1 className='text-2xl font-bold font-link text-white mt-32 offer'>Great Barrier Reef</h1>
                     <h1 className='text-xl text-white mt-4'><span className='text-error font-bold '>$776</span>/Mo</h1>
                   
                         <div className='flex text-white'>
@@ -80,7 +80,7 @@ const Offer = () => {
                     </div>
                 </div>
                 <div style={{
-                     background : `url( ${car4})`
+                     background : `url( ${offer4})`
 
                 }} className='p-20 photo'> 
                  <div style={{
@@ -91,10 +91,10 @@ const Offer = () => {
                 }} className='mx-auto p-3 font-bold font-link'>
                     <h1>15% Off</h1>
                     </div>
-                    <h1 className='text-2xl font-bold font-link text-white mt-32 offer'>Awsome Class Model</h1>
-                    <h1 className='text-xl text-white mt-4'><span className='text-error font-bold '>$776</span>/Mo</h1>
+                    <h1 className='text-2xl font-bold font-link text-black mt-32 offer'>Aurora Borealis</h1>
+                    <h1 className='text-xl text-black mt-4'><span className='text-error font-bold '>$776</span>/Mo</h1>
                   
-                        <div className='flex text-white'>
+                        <div className='flex text-black'>
                         <FontAwesomeIcon icon={faBullseye} className='text-error mt-1 mr-4 ml-16' />
                         <h1 className='para-link'>50 GL Free</h1>
                         
@@ -107,7 +107,7 @@ const Offer = () => {
                 <h1 style={{
                     color:'seagreen',
                     width:500
-                }} className='font-link text-3xl font-bold mx-auto'>Why Purchase Your Perfect Car From Our Company</h1>
+                }} className='font-link text-3xl font-bold mx-auto'>Why Choose Your Perfect Destination From Our Company</h1>
                 <p style={{
                     width:500
                 }} className='para-link m-6 mx-auto'>Ridiculus sodales metus varius dictum fermentum ante dictumst eleifend quam. Taciti tortor aenean nisl dapibus. Elementum, condimentum, est consequat adipiscing accumsan.</p>
@@ -122,7 +122,7 @@ const Offer = () => {
                     <FontAwesomeIcon style={{
                         height:40,width:40
                     }} icon={faReply} className='text-error mb-6' />
-                     <h1 className='text-3xl font-bold font-link'>Pre Owned Vehicles
+                     <h1 className='text-3xl font-bold font-link'>Explore the world
                     </h1>
                     
                     <p className='pera-link mt-8 m4-8'>
@@ -136,7 +136,7 @@ const Offer = () => {
                     <FontAwesomeIcon style={{
                         height:40,width:40
                     }}  icon={faTag} className='text-error mb-6'/>
-                    <h1 className='font-link font-bold text-3xl'>Brand New Cars</h1>
+                    <h1 className='font-link font-bold text-3xl'>Luxury Travel Packages</h1>
                     <p className='pera-link mt-8 mb-4 '>
                     Nec nulla feugiat tortor ipsum vel imperdiet magna tempus porta ridiculus molestie quis non nam mauris Vehicula. Fringilla, tellus. Dignissim consequat. Nisl mi ante. Facilisis luctus eu Porttitor curabitur. Morbi tempor dictum nam tellus. Ante dui potenti volutpat bibendum pede est, platea. Lectus quisque, erat feugiat sapien magna erat senectus praesent.</p>
                 </div>
@@ -144,37 +144,37 @@ const Offer = () => {
 
             <div className='grid grid-cols-3 w-4/5 mx-auto gap-6 mb-16'>
                <div>
-               <h1 className='text-2xl font-link font-bold offer'>New & Used Car</h1>
+               <h1 className='text-2xl font-link font-bold offer'>New & Old places</h1>
                 <p style={{
                     color:'gray'
                 }} className='para-link mt-4'>Ante dui potenti volutpat bibendum pede est, platea. Lectus quisque, erat feugiat sapien magna erat senectus praesent.</p>
                </div>
                <div>
-               <h1 className='text-2xl font-link font-bold offer'>0% APR Finincing</h1>
+               <h1 className='text-2xl font-link font-bold offer'>Explore Different Places</h1>
                 <p style={{
                     color:'gray'
                 }} className='para-link mt-4'>Ante dui potenti volutpat bibendum pede est, platea. Lectus quisque, erat feugiat sapien magna erat senectus praesent.</p>
                </div>
                <div>
-               <h1 className='text-2xl font-link font-bold offer'>0% APR Finincing</h1>
+               <h1 className='text-2xl font-link font-bold offer'>Explore Different Advantages</h1>
                 <p style={{
                     color:'gray'
                 }} className='para-link mt-4'>Ante dui potenti volutpat bibendum pede est, platea. Lectus quisque, erat feugiat sapien magna erat senectus praesent.</p>
                </div>
                <div>
-               <h1 className='text-2xl font-link font-bold offer'>Free Test Drive</h1>
+               <h1 className='text-2xl font-link font-bold offer'>Free Test Booking</h1>
                 <p style={{
                     color:'gray'
                 }} className='para-link mt-4'>Ante dui potenti volutpat bibendum pede est, platea. Lectus quisque, erat feugiat sapien magna erat senectus praesent.</p>
                </div>
                <div>
-               <h1 className='text-2xl font-link font-bold offer'>Vehicles History Pakages</h1>
+               <h1 className='text-2xl font-link font-bold offer'>Buy Luxury Pakages</h1>
                 <p style={{
                     color:'gray'
                 }} className='para-link mt-4'>Ante dui potenti volutpat bibendum pede est, platea. Lectus quisque, erat feugiat sapien magna erat senectus praesent.</p>
                </div>
                <div>
-               <h1 className='text-2xl font-link font-bold offer'>Buy, Sale, Trade</h1>
+               <h1 className='text-2xl font-link font-bold offer'>Book, Enjoy & Return</h1>
                 <p style={{
                     color:'gray'
                 }} className='para-link mt-4'>Ante dui potenti volutpat bibendum pede est, platea. Lectus quisque, erat feugiat sapien magna erat senectus praesent.</p>

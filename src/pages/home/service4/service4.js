@@ -18,7 +18,7 @@ const Service4 = () => {
            height:40,
            width:30
        }}  xmlns="http://www.w3.org/2000/svg" className="mx-auto" height="1em" viewBox="0 0 512 512"><path d="M135.2 117.4L109.1 192H402.9l-26.1-74.6C372.3 104.6 360.2 96 346.6 96H165.4c-13.6 0-25.7 8.6-30.2 21.4zM39.6 196.8L74.8 96.3C88.3 57.8 124.6 32 165.4 32H346.6c40.8 0 77.1 25.8 90.6 64.3l35.2 100.5c23.2 9.6 39.6 32.5 39.6 59.2V400v48c0 17.7-14.3 32-32 32H448c-17.7 0-32-14.3-32-32V400H96v48c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32V400 256c0-26.7 16.4-49.6 39.6-59.2zM128 288a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zm288 32a32 32 0 1 0 0-64 32 32 0 1 0 0 64z"/></svg>
-       <h1 className="text-2xl font-bold text-error mt-6 para-link">Car Sold Month</h1>
+       <h1 className="text-2xl font-bold text-error mt-6 para-link">Total Tour Month</h1>
        <h1 style={{
            color:"gray"
        }} className="text-3xl font-bold mt-4">1200</h1>
@@ -28,15 +28,23 @@ const Service4 = () => {
            height:40,
            width:30
        }}  xmlns="http://www.w3.org/2000/svg" className="mx-auto" height="1em" viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM199.4 312.6c31.2 31.2 81.9 31.2 113.1 0c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9c-50 50-131 50-181 0s-50-131 0-181s131-50 181 0c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0c-31.2-31.2-81.9-31.2-113.1 0s-31.2 81.9 0 113.1z"/></svg>
-       <h1 className="text-2xl font-bold text-error mt-6 para-link">Available Brands</h1>
+       <h1 className="text-2xl font-bold text-error mt-6 para-link">Available Places</h1>
        <h1 style={{
            color:"gray"
        }} className="text-3xl font-bold mt-4">20</h1>
        </div>
        <section>
          <div>
-           <p className="mr-10">Along with 1000s of cars to choose from, you can apply for finance online and value your existing car all from the comfort of your favourite armchair</p>
-           <p className="mt-6 mr-10 p-4">In line with our commitment to treating customers fairly, you can find more information about Charles Hurst complaints policy here</p>
+           <p className="mr-10">On the beautifully restored three-masted ship,
+             hop between islands and some of the most
+              bicycle-friendly cities in Europe. Nature lovers will
+               enjoy the white sand beaches along the ‘Danish Riviera' or the limestone, 
+               fossil-filled cliffs, and 'International Dark Sky Community’ of Møn.
+                </p>
+           <p className="mt-6 mr-10 p-4">This unique guided bike tour
+             includes two knowledgeable  
+             The choice is yours on 
+            this exceptional Scandinavian sail and bike vacation!</p>
        </div> 
        </section>
      </section>

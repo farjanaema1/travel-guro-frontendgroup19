@@ -24,6 +24,22 @@ const LogIn = () => {
           email : user.email
         }
         console.log(currentUser);
+        fetch('http://localhost:5000/jwt', {
+  method: 'POST',
+  headers: { 'Content-Type': 'application/json' },
+  body: JSON.stringify({ email: user.email }) // or email + password
+})
+  .then(res => res.json())
+  .then(data => {
+    if (data.token || data.accessToken) {
+      // Save token in localStorage
+      localStorage.setItem('accessToken', data.token || data.accessToken);
+      // Redirect or update UI as logged in
+    } else {
+      // Handle login failure
+    }
+  });
+
         // fetch(`http://localhost:5000/jwt`,{
         //   method:'POST',
         //   headers:{
@@ -88,7 +104,7 @@ const LogIn = () => {
       </form>
       <p style={{
         color:'navy'
-      }} className='text-center '>New in <span className="font-link">Travek Guro</span>? 
+      }} className='text-center '>New in <span className="font-link">Travel Guro</span>? 
         <Link to='/signup' className="font-bold">
         SignUp</Link>
 

@@ -58,7 +58,7 @@ const SignUp = () => {
     })
    }
     return (
-        <div className="h-[800px] flex justify-center items-center">
+        <div className="h-[800px] flex justify-center items-center text-white">
 <div className="w-96">
  <img className="mask mask-circle ml-16" src="https://i.ibb.co/Z8WbMvT/images-14.jpg" /> 
 
@@ -67,41 +67,60 @@ const SignUp = () => {
    
     <div className="form-control w-full ">
   <label className="label">
-    <span className="label-text">Name</span>
+    <span  className="label-text font-bold font-link">Name</span>
   
     
   </label>
   
-  <input  type="text" {...register("name",{
+  <input style={{
+                    backgroundColor:'#8f1d26'
+                }} type="text" {...register("name",{
     required:"Name is  required"
   })} className="input input-bordered w-full" placeholder="Name" />
 </div>
 <div className="form-control w-full ">
 {errors.name && <p className="text-red-600" role="alert">{errors.name?.message}</p>}
   <label className="label">
-    <span className="label-text">Email</span>
+    <span className="label-text font-bold font-link">Email</span>
   
     
   </label>
   
-  <input  type="email" {...register("email",{
+  <input  style={{
+                    backgroundColor:'#8f1d26'
+                }} type="email" {...register("email",{
     required:"email address required"
   })} className="input input-bordered w-full" placeholder="Email" />
 </div>
 <div className="form-control w-full ">
 {errors.email && <p className="text-red-600" role="alert">{errors.email?.message}</p>}
   <label className="label">
-    <span className="label-text">Password</span>
+    <span className="label-text font-bold font-link">Password</span>
   
     
   </label>
   
-  <input  type="password" {...register("password",{
+  <input style={{
+                    backgroundColor:'#8f1d26'
+                }}  type="password" {...register("password",{
     required:true,minLength:{value:6,message:'password must be 6 character'}
   })} className="input input-bordered w-full" placeholder="Password" />
-  {errors.password && <p className="text-red-600" role="alert">{errors.password?.message}</p>}
+  <label className="label">
+    <span className="label-text font-bold font-link">Phone</span>
+  
+    
+  </label>
+  
+  <input style={{
+                    backgroundColor:'#8f1d26'
+                }}  type="phone" {...register("phone",{
+    required:true,minLength:{value:6,message:'phone must be 11 character'}
+  })} className="input input-bordered w-full" placeholder="Password" />
+  {errors.phone && <p className="text-red-600" role="alert">{errors.phone?.message}</p>}
 </div>
-      <input type="submit" className="btn  w-full mt-5" />
+      <input style={{
+                    backgroundColor:'#8f1d26'
+                }} type="submit" className="btn  w-full mt-5 font-bold text-white" />
     </form>
     <h1 className="text-xl text-primary font-bold mt-4">Already have an account? please <Link className="text-secondary" to='/login'>LogIn</Link></h1>
    

@@ -17,12 +17,12 @@ const Home = () => {
            <Service1></Service1>
            <Service2></Service2>
            <Service3></Service3>
-           {/* <Service4></Service4> */}
+           <Service4></Service4>
           
            <Places></Places>
            <Destination></Destination>
-           {/* <Feedback></Feedback>
-           <Offer></Offer> */}
+           <Feedback></Feedback>
+           <Offer></Offer>
            <GetTouch></GetTouch>
         </div>
     )
