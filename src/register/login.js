@@ -24,7 +24,7 @@ const LogIn = () => {
           email : user.email
         }
         console.log(currentUser);
-        fetch('https://travel-backend-group19.vercel.app/jwt', {
+        fetch('https://travelbackendgroup19-production.up.railway.app/jwt', {
   method: 'POST',
   headers: { 'Content-Type': 'application/json' },
   body: JSON.stringify({ email: user.email }) // or email + password

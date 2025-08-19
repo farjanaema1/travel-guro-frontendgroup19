@@ -32,7 +32,7 @@ const SignUp = () => {
     }
    const saveUser = (name,email) => {
     const user = {name,email};
-    fetch('https://travel-backend-group19.vercel.app/users2',{
+    fetch('https://travelbackendgroup19-production.up.railway.app/users2',{
       method:'POST',
       headers:{
         'content-type':'application/json'
@@ -47,7 +47,7 @@ const SignUp = () => {
     })
    }
    const getUserToken = email => {
-    fetch(`https://travel-backend-group19.vercel.app/jwt?.email=${email}`)
+    fetch(`https://travelbackendgroup19-production.up.railway.app/jwt?.email=${email}`)
     .then(res => res.json())
     .then(data => {
       console.log(data);

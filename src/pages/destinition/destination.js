@@ -16,7 +16,7 @@ const Destination = () => {
         //fetch(`http://localhost:5000/cars?
        // search=${search}&order=${isAsc? 'asc' : 'dsc'}`)
         //  fetch(`http://localhost:5000/services?order=${isAsc? 'Ascending' : 'Descending '}`)
-         fetch('https://travel-backend-group19.vercel.app/cars')
+         fetch('https://travelbackendgroup19-production.up.railway.app/cars')
         
         // fetch('cars.json')
         .then(res => res.json())
