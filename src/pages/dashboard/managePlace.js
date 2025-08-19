@@ -15,7 +15,7 @@ import  Singleplace from "../Singleplace/singleplace"
         queryKey:['newCars'],
         queryFn : async() => {
             try{
-                const res = await fetch('https://travelbackendgroup19-production.up.railway.app/newCars',{
+                const res = await fetch('https://travel-backend-group19.vercel.app/newCars',{
                     headers:{
                         'content-type':'application/json'
                        
@@ -51,7 +51,7 @@ import  Singleplace from "../Singleplace/singleplace"
       // }
      const handleDeleteCar = (id) => {
   console.log("Deleting car with ID:", id);
-  fetch(`https://travelbackendgroup19-production.up.railway.app/newCars/${id}`, {
+  fetch(`https://travel-backend-group19.vercel.app/newCars/${id}`, {
     method: 'DELETE',
     headers: { 'Content-Type': 'application/json' }
   })

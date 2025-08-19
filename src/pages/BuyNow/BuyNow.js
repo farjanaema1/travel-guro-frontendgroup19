@@ -26,7 +26,7 @@ const BuyNow = () => {
            
 
         }
-        fetch('https://travelbackendgroup19-production.up.railway.app/orders2',{
+        fetch('https://travel-backend-group19.vercel.app/orders2',{
             method:'POST',
             headers:{
                 'content-type':'application/json'

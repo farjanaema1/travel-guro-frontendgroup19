@@ -15,7 +15,7 @@ const AddPlace = () => {
     const{data:specialties,isLoading} = useQuery({
         queryKey : ['specialty'],
         queryFn : async() => {
-            const res = await fetch('https://travelbackendgroup19-production.up.railway.app/specialCars');
+            const res = await fetch('https://travel-backend-group19.vercel.app/specialCars');
             const data = await res.json();
             return data;
 
@@ -97,7 +97,7 @@ const AddPlace = () => {
       price: data.price
     };
 
-    return fetch(`https://travelbackendgroup19-production.up.railway.app/newCars`, {
+    return fetch(`https://travel-backend-group19.vercel.app/newCars`, {
       method: 'POST',
       headers: { 'content-type': 'application/json' },
       body: JSON.stringify(car)

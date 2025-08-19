@@ -24,7 +24,7 @@ const useAdmin = (email) => {
   useEffect(() => {
     if (email) {
       setAdminLoading(true);
-      fetch(`https://travelbackendgroup19-production.up.railway.app/users2/admin/${email}`, {
+      fetch(`https://travel-backend-group19.vercel.app/users2/admin/${email}`, {
         headers: {
           authorization: `Bearer ${localStorage.getItem("accessToken")}`
         }
