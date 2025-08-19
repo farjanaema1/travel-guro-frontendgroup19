@@ -24,7 +24,7 @@ const useAdmin = (email) => {
   useEffect(() => {
     if (email) {
       setAdminLoading(true);
-      fetch(`http://localhost:5000/users2/admin/${email}`, {
+      fetch(`https://travel-backend-group19-2.onrender.com//users2/admin/${email}`, {
         headers: {
           authorization: `Bearer ${localStorage.getItem("accessToken")}`
         }

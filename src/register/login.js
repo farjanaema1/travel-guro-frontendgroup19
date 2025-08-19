@@ -24,7 +24,7 @@ const LogIn = () => {
           email : user.email
         }
         console.log(currentUser);
-        fetch('http://localhost:5000/jwt', {
+        fetch('https://travel-backend-group19-2.onrender.com//jwt', {
   method: 'POST',
   headers: { 'Content-Type': 'application/json' },
   body: JSON.stringify({ email: user.email }) // or email + password

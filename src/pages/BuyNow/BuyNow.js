@@ -26,7 +26,7 @@ const BuyNow = () => {
            
 
         }
-        fetch('http://localhost:5000/orders2',{
+        fetch('https://travel-backend-group19-2.onrender.com//orders2',{
             method:'POST',
             headers:{
                 'content-type':'application/json'

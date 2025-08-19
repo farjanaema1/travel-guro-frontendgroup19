@@ -15,7 +15,7 @@ const AddPlace = () => {
     const{data:specialties,isLoading} = useQuery({
         queryKey : ['specialty'],
         queryFn : async() => {
-            const res = await fetch('http://localhost:5000/specialCars');
+            const res = await fetch('https://travel-backend-group19-2.onrender.com//specialCars');
             const data = await res.json();
             return data;
 
@@ -97,7 +97,7 @@ const AddPlace = () => {
       price: data.price
     };
 
-    return fetch(`http://localhost:5000/newCars`, {
+    return fetch(`https://travel-backend-group19-2.onrender.com//newCars`, {
       method: 'POST',
       headers: { 'content-type': 'application/json' },
       body: JSON.stringify(car)

@@ -15,7 +15,7 @@ import  Singleplace from "../Singleplace/singleplace"
         queryKey:['newCars'],
         queryFn : async() => {
             try{
-                const res = await fetch('http://localhost:5000/newCars',{
+                const res = await fetch('https://travel-backend-group19-2.onrender.com//newCars',{
                     headers:{
                         'content-type':'application/json'
                        
@@ -51,7 +51,7 @@ import  Singleplace from "../Singleplace/singleplace"
       // }
      const handleDeleteCar = (id) => {
   console.log("Deleting car with ID:", id);
-  fetch(`http://localhost:5000/newCars/${id}`, {
+  fetch(`https://travel-backend-group19-2.onrender.com//newCars/${id}`, {
     method: 'DELETE',
     headers: { 'Content-Type': 'application/json' }
   })
