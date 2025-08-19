@@ -47,12 +47,12 @@ const router = createBrowserRouter([
                 path:'/details/:id',
                 element:<Details></Details>,
                 loader:({params}) => 
-                fetch(`https://travel-backend-group19-2.onrender.com/${params.id}`)
+                fetch(`https://travelbackendgroup19-production.up.railway.app/${params.id}`)
             },
             {
                 path:'/buynow/:id',
                 element:<BuyNow></BuyNow>,
-                loader:({params}) => fetch(`https://travel-backend-group19-2.onrender.com/${params.id}`)
+                loader:({params}) => fetch(`https://travelbackendgroup19-production.up.railway.app/${params.id}`)
             },
            
 
@@ -96,7 +96,7 @@ const router = createBrowserRouter([
             {
                 path:'/dashboard/payment/:id',
                 element:<Payment></Payment>,
-                loader:({params}) => fetch(`https://travel-backend-group19-2.onrender.com/${params.id}`)
+                loader:({params}) => fetch(`https://travelbackendgroup19-production.up.railway.app/${params.id}`)
 
             }
         ]
