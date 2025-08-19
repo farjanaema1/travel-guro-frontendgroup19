@@ -32,7 +32,7 @@ const SignUp = () => {
     }
    const saveUser = (name,email) => {
     const user = {name,email};
-    fetch('https://travel-backend-group19-2.onrender.com//users2',{
+    fetch('https://travel-backend-group19-2.onrender.com/users2',{
       method:'POST',
       headers:{
         'content-type':'application/json'
@@ -47,7 +47,7 @@ const SignUp = () => {
     })
    }
    const getUserToken = email => {
-    fetch(`https://travel-backend-group19-2.onrender.com//jwt?.email=${email}`)
+    fetch(`https://travel-backend-group19-2.onrender.com/jwt?.email=${email}`)
     .then(res => res.json())
     .then(data => {
       console.log(data);

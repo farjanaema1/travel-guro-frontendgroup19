@@ -16,7 +16,7 @@ const Destination = () => {
         //fetch(`http://localhost:5000/cars?
        // search=${search}&order=${isAsc? 'asc' : 'dsc'}`)
         //  fetch(`http://localhost:5000/services?order=${isAsc? 'Ascending' : 'Descending '}`)
-         fetch('https://travel-backend-group19-2.onrender.com//cars')
+         fetch('https://travel-backend-group19-2.onrender.com/cars')
         
         // fetch('cars.json')
         .then(res => res.json())
