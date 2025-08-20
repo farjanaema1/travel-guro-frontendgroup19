@@ -75,22 +75,22 @@ const router = createBrowserRouter([
 
              },
             {
-                path:'/allusers',
+                path:'/dashboard/allusers',
                  element:<AdminRoute><AllUsers></AllUsers></AdminRoute>,
                 element:<AllUsers></AllUsers>
             },
             {
-                path:'/addCar',
+                path:'/dashboard/addCar',
                 element:<AddPlace></AddPlace>
 
             },
             {
-                path:'/dashboard',
+                path:'/dashboard/dashboard',
                 element:<Dashboard></Dashboard>
 
             },
             {
-                 path:'/manageCar',
+                 path:'/dashboard/manageCar',
                 element:<ManagePlaces></ManagePlaces>
             },
             // {
