@@ -42,10 +42,10 @@ const DashBoardLayout = () => {
         <li><Link t0='/dashboard'>MyCart</Link></li>
         {isAdmin && (
           <>
-            <li><a href="/dashboard/allusers">All Users</a></li>
-            <li><a href="/dashboard/addCar">Add Place</a></li>
-            <li><a href="/dashboard/manageCar">Manage Place</a></li>
-            <li><a href="/dashboard/dashboard">Dashboard</a></li>
+            <li><a href="/allusers">All Users</a></li>
+            <li><a href="/addCar">Add Place</a></li>
+            <li><a href="/manageCar">Manage Place</a></li>
+            <li><a href="/dashboard">Dashboard</a></li>
           </>
         )}
       </ul>

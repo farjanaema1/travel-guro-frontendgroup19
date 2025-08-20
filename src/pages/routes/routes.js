@@ -75,30 +75,30 @@ const router = createBrowserRouter([
 
              },
             {
-                path:'/dashboard/allusers',
+                path:'/allusers',
                  element:<AdminRoute><AllUsers></AllUsers></AdminRoute>,
                 element:<AllUsers></AllUsers>
             },
             {
-                path:'/dashboard/addCar',
+                path:'/addCar',
                 element:<AddPlace></AddPlace>
 
             },
             {
-                path:'/dashboard/dashboard',
+                path:'/dashboard',
                 element:<Dashboard></Dashboard>
 
             },
             {
-                 path:'/dashboard/manageCar',
+                 path:'/manageCar',
                 element:<ManagePlaces></ManagePlaces>
             },
-            {
-                path:'/dashboard/payment/:id',
-                element:<Payment></Payment>,
-                loader:({params}) => fetch(`https://travel-backend-group19-2.onrender.com/${params.id}`)
+            // {
+            //     path:'/dashboard/payment/:id',
+            //     element:<Payment></Payment>,
+            //     loader:({params}) => fetch(`https://travel-backend-group19-2.onrender.com/${params.id}`)
 
-            }
+            // }
         ]
     }
 ])
