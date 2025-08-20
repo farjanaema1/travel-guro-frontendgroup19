@@ -6,13 +6,13 @@ const AllUsers = () => {
     const {data: users = [],refetch} = useQuery({
         queryKey:['users'],
        queryFn: async() => {
-        const res = await fetch('https://travelbackendgroup19-production.up.railway.app/users2');
+        const res = await fetch('https://travel-backend-group19-2.onrender.com/users2');
         const data = await res.json();
         return data;
        }
     })
     // const handleMakeAdmin = id => {
-    //   fetch(`http://localhost:5000/users2/admin/${id}`,{
+    //   fetch(`https://travel-backend-group19-2.onrender.com/users2/admin/${id}`,{
     //     method:'PUT'
     //   })
     //   .then(res => res.json())
@@ -27,7 +27,7 @@ const AllUsers = () => {
     // }
     const handleMakeAdmin = async (id) => {
   try {
-    const res = await fetch(`https://travelbackendgroup19-production.up.railway.app/users2/admin/${id}`, {
+    const res = await fetch(`https://travel-backend-group19-2.onrender.com/users2/admin/${id}`, {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json',

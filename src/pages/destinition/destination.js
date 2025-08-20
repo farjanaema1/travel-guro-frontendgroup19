@@ -13,10 +13,10 @@ const Destination = () => {
    const [search,setSearch] = useState('');
 
     useEffect( () => {
-        //fetch(`http://localhost:5000/cars?
+        //fetch(`https://travel-backend-group19-2.onrender.com/cars?
        // search=${search}&order=${isAsc? 'asc' : 'dsc'}`)
-        //  fetch(`http://localhost:5000/services?order=${isAsc? 'Ascending' : 'Descending '}`)
-         fetch('https://travelbackendgroup19-production.up.railway.app/cars')
+        //  fetch(`https://travel-backend-group19-2.onrender.com/services?order=${isAsc? 'Ascending' : 'Descending '}`)
+         fetch('https://travel-backend-group19-2.onrender.com/cars')
         
         // fetch('cars.json')
         .then(res => res.json())

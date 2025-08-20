@@ -20,8 +20,8 @@ const Dashboard = () => {
 
   useEffect( () => {
     fetch('cars.json')
-    //  fetch(`http://localhost:5000/services?order=${isAsc? 'Ascending' : 'Descending '}`)
-    // fetch('http://localhost:5000/cars')
+    //  fetch(`https://travel-backend-group19-2.onrender.com/services?order=${isAsc? 'Ascending' : 'Descending '}`)
+    // fetch('https://travel-backend-group19-2.onrender.com/cars')
     
     // fetch('cars.json')
     .then(res => res.json())
